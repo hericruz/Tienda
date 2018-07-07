@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://d2d3qesrx8xj6s.cloudfront.net/iframe/bpxxA -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>logIn and signUp form - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    #loginform , #signUpForm{
+    background-color: rgba(231, 232, 232, 0.73);
+    border: 3px none;
+    width:100%;
+    box-shadow: #333 9px 9px 30px 3px inset;
+	margin-top:0px;
+	    margin-bottom: 0px;
+	    padding: 20px 0;
+}
+#signUpForm{
+	display:none;
+}
+body
+{ 
+	/*background-image:url(../img/wall.jpg);
+	body { width: 100%; height: 100%; margin: 0px; padding: 0px; }*/
+	background-color: #0d6565;
+}
+.list-group-item-choice{
+	background-color:#4CAF50;
+	background-color:#a0b3b0;
+	border-top: 1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	border-right:0px solid #ddd;
+	margin:auto;
+	padding:10px 50px;
+}
+.active {
+  background: #1ab188;
+  color: #ffffff;
+  width:100%;
+  padding: 30px 52px;
+}
+.list-group-item-choice:hover{
+  background: #179b77;
+  color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.swichChoices:link ,.swichChoices:visited , .swichChoices:hover , .swichChoices:active {
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.swichChoices{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.row{margin:0;}
+.noPadding{padding-right:0px;
+padding-left:0px;
+padding-top:20px;}
+#firstName , #lastName
+{
+	font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    width:100%;
+    font-weight: 400;
+    margin:auto;
+}
+#signUpForm > div.row{
+	padding:0 43px;
+}
+.header{
+	width:100%;
+	padding-top:20px;
+}
+div input[type=password] , input[type=text]
+{
+	font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    width:80%;
+    font-weight: 400;
+    margin:auto;
+}
+#gender
+{
+
+	font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    margin:auto;
+        width:80%;
+    font-weight: 400;
+}
+div button[type="submit"]
+{
+	font-family: 'Exo', sans-serif;
+	margin:auto;
+	    width:80%;
+    font-size: 16px;
+    font-weight: 400;
+}
+    </style>
+    <script src="./jquery-1.11.1.min.js.descarga"></script>
+    <script src="./bootstrap.min.js.descarga"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+</head>
+<body id="top">
+	    
+        login and signUp form
+        
+		<div class="container-flued">               
+				<div class=" col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2 noPadding">
+					<ul class="list-group" style="width:50% ;float:right">
+						<li class="active list-group-item-choice list-group-item ">
+							<a class="swichChoices " href="https://d2d3qesrx8xj6s.cloudfront.net/iframe/bpxxA#signIn">signIn</a>
+						</li>
+						<li class="list-group-item-choice list-group-item ">
+							<a class="swichChoices" href="https://d2d3qesrx8xj6s.cloudfront.net/iframe/bpxxA#signIn">signUp</a>
+						</li>
+                     </ul>
+			    </div>
+				<div class=" col-lg-4  col-md-4 col-sm-4 col-xs-4 noPadding"> 
+					<div class="row">
+						<form action="https://d2d3qesrx8xj6s.cloudfront.net/iframe/bpxxA" method="post" id="loginform">
+							<div class="form-group">
+								<label for="username" class="sr-only">User Name</label>
+								<input type="text" class="form-control input-lg input-block" id="username" name="username" placeholder="username">
+							</div>
+							<div class="form-group">
+								<label for="password" class="sr-only"> Password</label>
+								<input type="password" class="form-control input-lg input-block" id="password" name="password" placeholder="password">
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-lg btn-block" id="submitform">enter </button>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<form action="https://d2d3qesrx8xj6s.cloudfront.net/iframe/bpxxA" method="post" id="signUpForm">
+							<div class="row">
+								<div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label for="firstName" class="sr-only">First Name</label>
+										<input type="text" class="form-control input-lg" id="firstName" name="firstName" placeholder="firstName">
+									</div>
+								</div>
+								<div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label for="lastName" class="sr-only">Last Name</label>
+										<input type="text" class="form-control input-lg" id="lastName" name="lastName" placeholder="lastName">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="user">userName</label>
+								<input type="text" class="form-control input-lg" id="user" name="user" placeholder="userName"> 	
+							</div>
+							<div class="form-group">
+								<label for="gender" class="sr-only">Gender</label>
+								<select class="form-control input-lg input-block" id="gender" name="gender" size="1">
+									<option value="1">male</option>
+									<option value="2">female</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="password" class="sr-only">Password</label>
+								<input type="password" class="form-control input-lg input-block" id="pass" name="pass" placeholder="password">
+							</div>
+							<div class="form-group">
+								<label for="password" class="sr-only">Reenter Password</label>
+								<input type="password" class="form-control input-lg input-block" id="reEnteredPass" name="rePass" placeholder="reenter password">
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-success btn-lg btn-block" id="submitSignUpForm" name="submitSignUpFormButton">submit </button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-4 col-sm-4 col-xs-4 "> </div>
+			
+			
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('.swichChoices').on('click', function (e) {
+
+		e.preventDefault();
+		$(this).parent().addClass('active');
+		$(this).parent().siblings().removeClass('active');
+
+
+		var target =$('.active > a').text();
+		if(target=="signIn"){
+			$("#signUpForm").slideUp(function(){$('#loginform').slideDown();});
+
+		}
+		else if(target=="signUp")
+		{
+			$('#loginform').slideUp(function(){$('#signUpForm').slideDown();});
+
+		}
+  
+});
+
+});
+	</script>
+
+
+</div></body></html>
